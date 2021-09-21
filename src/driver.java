@@ -1,4 +1,8 @@
-
+/**
+ * @author benjohnston Driver class that has constructor to create new drivers
+ *         along with getters and setters and a toString method
+ *
+ */
 public class driver {
 	int id;
 	String name;
@@ -12,10 +16,10 @@ public class driver {
 	String description;
 	String imagePath;
 
-	public driver(int id,String name, int age, int wins,int podiums, int speed, int experience, int racecraft,int reliability,
-			String description, String imagePath) {
+	public driver(int id, String name, int age, int wins, int podiums, int speed, int experience, int racecraft,
+			int reliability, String description, String imagePath) {
 		super();
-		this.id=id;
+		this.id = id;
 		this.name = name;
 		this.age = age;
 		this.wins = wins;
@@ -23,7 +27,7 @@ public class driver {
 		this.speed = speed;
 		this.experience = experience;
 		this.racecraft = racecraft;
-		this.reliability=reliability;
+		this.reliability = reliability;
 		this.description = description;
 		this.imagePath = imagePath;
 	}
@@ -115,8 +119,12 @@ public class driver {
 	public void setImagePath(String imagePath) {
 		this.imagePath = imagePath;
 	}
-	
-	
+
+	@Override
+	public String toString() {
+		return "driver [id=" + id + ", name=" + name + ", age=" + age + ", wins=" + wins + ", podiums=" + podiums
+				+ ", speed=" + speed + ", experience=" + experience + ", racecraft=" + racecraft + ", reliability="
+				+ reliability + ", description=" + description + ", imagePath=" + imagePath + "]";
+	}
+
 }
-
-
