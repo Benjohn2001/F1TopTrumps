@@ -122,9 +122,9 @@ public class driver {
 
 	@Override
 	public String toString() {
-		return "driver [id=" + id + ", name=" + name + ", age=" + age + ", wins=" + wins + ", podiums=" + podiums
-				+ ", speed=" + speed + ", experience=" + experience + ", racecraft=" + racecraft + ", reliability="
-				+ reliability + ", description=" + description + ", imagePath=" + imagePath + "]";
+		return "Driver: " + name + " who is driver number " + id + " and is " + age + " years old and has " + wins
+				+ " wins and " + podiums + " podiums \n" + description + "\n(1) SPEED: " + speed + " \n(2) EXPERIENCE: "
+				+ experience + " \n(3) RACECRAFT: " + racecraft + " \n(4) RELIABILITY: " + reliability;
 	}
 
 }
